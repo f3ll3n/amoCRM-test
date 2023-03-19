@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400;900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: url('./img/bg.png');
+    background-size: cover;
+    background-color: #0E1014;
+}
+
+.wrap{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-image: url('./img/bg.png');
+    background-size: cover;
+    min-width:320px;
+    
+    background-color: #0E1014;
+}
+.wrapper-block{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.active{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.active:hover{
+    color: #FCB045;
+}
+.flexbox{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.gradient{
+  background-image: -o-linear-gradient(45deg, #FCB045, #FD1D1D);
+  background-image: linear-gradient(45deg, #FCB045, #FD1D1D);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* specific styles */
+header *{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    font-size: 16px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 55px 0 0 0;
+}
+.header-under-logo_text{
+    padding: 7px 0 0 0;
+    line-height: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: #E4E5EA;
+}
+.header-nav_block{
+    max-width: 503px;
+    width: 100%;
+    padding: 5px 7% 0 0;
+}
+.header-nav_block .header-nav_list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.header-nav_block .header-nav_list .header-nav_item a{
+    text-decoration: none;
+}
+.header-contact_block{
+    padding: 5px 0 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 310px;
+    width: 100%;
+}
+.header-contact-social_list{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 118px;
+}
+.header-contact-social_list a{
+    display: flex;
+    height: 20px;
+    align-items: center;
+}
+.header-contact-social_list li:first-child{
+    padding: 1px 0 0 0;
+}
+
+.main_block{
+    padding: 92px 0;
+    color: #E4E5EA;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.main_block .main-title-left_block .main-title_text{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+}
+.main-under-title_text{
+    padding: 10px 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    color: #E4E5EA;
+    line-height: 22px;
+}
+.main-title-left_block .main-title_text .main-title_selection{
+    font-weight: 900;
+}
+.main-consult-benefits-right_block{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+}
+.main-consult-benefits_title{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+    text-align: right;
+}
+.main-consult-benefits_title .main-title_selection {
+    text-transform: uppercase;
+    letter-spacing: 0.7pt;
+    font-weight: 700;
+}
+
+.main_block .main-consult-benefits_items-list{
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    width: 330px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.main-consult-benefits_items-list .main-consult-benefits_item{
+    width: 50%;
+    margin: 5px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: right;
+}
+
+.main-consult-benefits-item_title {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin: 12px 0 8px 0;
+    letter-spacing: 0.7pt;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main-consult-benefits-item_text{
+    font-family: 'Montserrat', sans-serif;
+    margin: 7px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #E4E5EA;
+    line-height: 15pt;
+}
+.main-consult-benefits-btn_block{
+    margin-left: auto;
+    padding: 44px 0 0 0;
+    width: 265px;
+}
+.main-consult-benefits-btn_block .main-consult-benefits_btn{
+    height: 65px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #E4E5EA;
+    cursor: pointer;
+    border: 0;
+    background-color: #4077F3;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.main-consult-benefits-btn_block .main-consult-benefits_btn:hover{
+    background-color: #1a5df8;
+}
+.footer_block{
+    padding: 13px 0 0 0;
+}
+.footer_block *{
+    color: #E4E5EA;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-top_block{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
+}
+.footer_block .footer-title{
+    margin: 15px 0 16px 0;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    color: #656566;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer_block ul{
+    font-size: 16px;
+    padding: 0;
+}
+.footer-contact_list{
+    font-size: 16px;
+}
+.footer_block ul *{
+    padding: 5px 0;
+}
+.footer_block .footer-menu_block .footer-menu-lists_block{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 475px;
+}
+.footer_block .footer-menu_block .footer-menu-lists_block .footer-menu-list:last-child{
+    padding-left: 50px;
+}
+.footer_block .footer-menu_block .footer-menu-lists_block ul{
+    padding: 0;
+    margin: 0;
+}
+.footer_block .footer-contact_block{
+    text-align: right;
+}
+.footer-contact_social_block{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+}
+.footer-contact-social_list{
+    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80px;
+    height: 20px;
+}
+.footer-contact-social_list a{
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+.mobile-show{
+    position: relative;
+    padding: 0 0 0 15px;
+    display: none;
+}
+.footer-bottom_block p{
+    margin: 0;
+    padding: 5px 0;
+}
+.footer-contact_block{
+    font-size: 14px;
+}
+.footer-bottom_block .active{
+    text-decoration:underline;
+}
+.footer-bottom_block{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+.footer-contact_social_block{
+    height: 50px;
+}
+.footer-bottom_block{
+    padding: 18px 0;
+}
+.footer-bottom_block *{
+    line-height: 13px;
+}
+
+
+
+@media screen and (max-width: 1180px){
+    .wrap{
+        padding: 0 10px;
+    }
+    .tablet-hide{
+        display: none;
+    }
+    .header-nav_block{
+        padding: 0 5%;
+    }
+    .footer_block .footer-menu_block .footer-menu-lists_block{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+        width: 410px;
+    }
+}
+@media screen and (max-width: 719px){
+
+    .mobile-hide{
+        display: none;  
+    }
+    .mobile-show{
+        display: block;
+    }
+    .wrap{
+        padding: 0;
+    }
+    header{
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #0E1014;
+        height: 55px;
+        padding: 0;
+    }
+    
+    footer{
+        background-color: #0E1014;
+    }
+    .header-nav_block{
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 8px;
+    }
+    .header-nav_block ul{
+        font-size: 12px;
+        height: 55px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .main_block{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .main_block .main-title-left_block .main-title_text{
+        font-size: 36px;
+    }
+    .main-consult-benefits_title{
+        text-align: left;
+    }
+    .main_block .main-consult-benefits_items-list .main-consult-benefits-item_title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #E4E5EA;
+        font-size: 13px;
+    }
+    .main_block .main-consult-benefits_items-list .main-consult-benefits_item{
+        text-align: left;
+    }
+    .main-title-left_block,
+    .main-consult-benefits-right_block,
+    .footer-about-company_block,
+    .footer-menu_block,
+    .footer-contact_block,
+    .footer-bottom_block{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .main_block .main-consult-benefits_items-list{
+        max-width: 380px;
+        width: 100%;
+    }
+    .mobile-show::after{
+        content: '';
+        display: block;
+        width: 10px;
+        height: 1px;
+        top: 8px;
+        left: 0;
+        background-image: -o-linear-gradient(45deg, #FCB045, #FD1D1D);
+        background-image: linear-gradient(45deg, #FCB045, #FD1D1D);
+        position: absolute;
+    }
+    .footer-top_block{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .footer-contact_block *{
+        text-align: left;
+    }
+    .footer-contact_social_block{
+        height: 27px;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+    }
+    .footer_block .footer-title{
+        font-size: 12px ;
+        font-weight: 700;
+    }
+    .footer_block ul{
+        font-size: 14px;
+    }
+    .footer_block .footer-menu_block .footer-menu-lists_block {
+        width: 100%;   
+    }
+    .address{
+        font-size: 14px;
+    }
+    .footer-contact_tel{
+        font-size: 14px;
+    }
+    .footer-contact-social_list{
+        position: relative;
+        height: 20px;
+        margin: 0;
+    }
+    .footer-contact-social_list a img{
+        position: absolute !important;
+    }
+    .footer-bottom_block{
+        text-align: left;
+    }
+    .footer-contact_block{
+        padding: 15px 0 0 0;
+    }
+
+}
+@media screen and (max-width: 448px){
+    .header-nav_item:last-child{
+        display: none;
+    }
+    .main-title-left_block,
+    .main-consult-benefits-right_block,
+    .footer-about-company_block,
+    .footer-menu_block,
+    .footer-contact_block,
+    .footer-bottom_block{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
